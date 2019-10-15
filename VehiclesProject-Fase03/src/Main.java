@@ -44,7 +44,7 @@ public class Main {
                 System.out.println("Error: debe escoger entre coche y moto");
             }
         } while ( (! transportationType.equals("coche"))  && (! transportationType.equals("moto")));
-
+        sc.close();
         /* based on the selection we return c for coche or m for moto */
         if ( transportationType.equals("coche") )
         {
@@ -107,6 +107,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print(detail + ": ");
         String info = sc.nextLine();
+        sc.close();
         /* Validate data */
         if ( detail == "Matricula")
         {
@@ -192,6 +193,7 @@ public class Main {
         {
             WheelsList.add( new Wheel( brand, diameter ) );
         }
+        sc.close();
         return WheelsList;
     }
 }

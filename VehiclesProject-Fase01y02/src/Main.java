@@ -61,6 +61,7 @@ public class Main {
         System.out.println("Por favor ingrese los datos de las ruedas " + wheelLocation + ":");
         System.out.print("Marca: ");
         brand = sc.nextLine();
+        sc.close();
 
         /* Get the diameter of the wheel */
         boolean valueNotOk = true;
@@ -69,6 +70,7 @@ public class Main {
             try {
                 System.out.print("Diametro: ");
                 diameter = Double.parseDouble(sc.nextLine());
+                sc.close();
                 /* Validate Diameter */
                 if ( diameter < 0.4 || diameter > 4 )
                 {
