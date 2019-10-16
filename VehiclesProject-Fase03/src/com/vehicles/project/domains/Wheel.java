@@ -1,4 +1,4 @@
-package com.vehicles.project;
+package com.vehicles.project.domains;
 
 import java.util.Objects;
 

@@ -1,7 +1,9 @@
-import com.vehicles.project.Bike;
-import com.vehicles.project.Car;
-import com.vehicles.project.Vehicle;
-import com.vehicles.project.Wheel;
+package com.vehicles.project;
+
+import com.vehicles.project.domains.Bike;
+import com.vehicles.project.domains.Car;
+import com.vehicles.project.domains.Vehicle;
+import com.vehicles.project.domains.Wheel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,13 +15,13 @@ public class Main {
 
     public static void main (String[] args)
     {
-        char transportationType = getTransportationType();
+        String transportationType = getTransportationType();
         Vehicle transportation = null;
-        if ( transportationType == 'c')
+        if ( transportationType == "coche")
         {
             transportation = createCar();
         }
-        else if ( transportationType == 'm')
+        else if ( transportationType == "moto")
         {
             transportation = createBike();
         }
@@ -30,7 +32,7 @@ public class Main {
      * Metodo que pregunta al usuario si quiere registrar coche o moto
      * @return c - coche / m - moto
      */
-    private static char getTransportationType ()
+    private static String getTransportationType ()
     {
         String transportationType;
         Scanner sc = new Scanner(System.in);
@@ -45,16 +47,7 @@ public class Main {
             }
         } while ( (! transportationType.equals("coche"))  && (! transportationType.equals("moto")));
         sc.close();
-        /* based on the selection we return c for coche or m for moto */
-        if ( transportationType.equals("coche") )
-        {
-            return 'c';
-        }
-        else if ( transportationType.equals("moto") )
-        {
-            return 'm';
-        }
-        return '-';
+        return transportationType;
     }
 
     /**
@@ -130,7 +123,7 @@ public class Main {
      * @param wheelLocation - delantera / trasera
      * @return Listado de las dos ruedas traseras o delanteras.
      */
-    private static List<Wheel> addWheelsInfo (String wheelLocation, char transportationType )
+    private static List<Wheel> addWheelsInfo (String wheelLocation, String transportationType )
     {
 
         /* Create the Scanner object */
@@ -146,7 +139,7 @@ public class Main {
         brand = sc.nextLine();
 
         /* Get the diameter of the wheel */
-        boolean valueNotOk = true;
+        boolean isOk = false; // por convención se sabe que si una variable comienza con is, es una booleana.
         do
         {
             try {
@@ -157,18 +150,18 @@ public class Main {
                 {
                     throw ( new Exception());
                 }
-                valueNotOk = false;
+                isOk = true;
 
             } catch (Exception e) {
                 //e.printStackTrace();
                 System.out.println("Ingrese un número valido entre 0.4 y 4.");
             }
-        } while ( valueNotOk );
+        } while ( ! isOk );
 
         /* Si estamo agregando un a moto preguntamos el número de ruedas */
         int numWheels = 0;
-        valueNotOk = true;
-        if (transportationType == 'm')
+        isOk = false;
+        if (transportationType == "moto")
         {
             try {
                 System.out.println("¿Cuantas ruedas " + wheelLocation + " tiene?");
@@ -178,14 +171,14 @@ public class Main {
                 {
                     throw ( new Exception());
                 }
-                valueNotOk = false;
+                isOk = true;
 
             } catch (Exception e) {
                 //e.printStackTrace();
                 System.out.println("Ingrese un número valido entre 1 y 4");
             }
         }
-        else if (transportationType == 'm')
+        else if (transportationType == "choche")
         {
             numWheels = 2;
         }

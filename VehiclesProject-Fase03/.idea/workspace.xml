@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e610b379-a5cd-440a-af8d-0fe00f0236e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../VehiclesProject-Fase01y02/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclesProject-Fase01y02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclesProject-Fase01y02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VehiclesProject-Fase01y02/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VehiclesProject-Fase01y02/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Bike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Wheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Wheel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +22,16 @@
   <component name="ProjectId" id="1Rje8Lu1LM5MBFfAj4jbOLU99tH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vehicles.project" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
