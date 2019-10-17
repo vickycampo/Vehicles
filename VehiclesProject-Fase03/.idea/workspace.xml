@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e610b379-a5cd-440a-af8d-0fe00f0236e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/vehicles/project/Wheel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/vehicles/project/domains/Wheel.java" afterDir="false" />
-    </list>
+    <list default="true" id="e610b379-a5cd-440a-af8d-0fe00f0236e5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
